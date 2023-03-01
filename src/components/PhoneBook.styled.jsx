@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const AppStyles = styled.div`
+const PhoneBookStyles = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,4 +9,4 @@ const AppStyles = styled.div`
   font-size: 20px;
 `;
 
-export { AppStyles };
+export { PhoneBookStyles };
