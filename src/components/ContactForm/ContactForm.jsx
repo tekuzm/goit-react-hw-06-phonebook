@@ -12,10 +12,8 @@ const ContactForm = ({ onSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    if (onSubmit({ name, number })) {
-      reset();
-    }
+    onSubmit({ name, number });
+    reset();
   };
 
   const reset = () => {
