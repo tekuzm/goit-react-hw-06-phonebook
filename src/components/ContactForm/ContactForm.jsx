@@ -14,6 +14,10 @@ const ContactForm = ({ onSubmit }) => {
     e.preventDefault();
     onSubmit({ name, number });
     reset();
+    // if (onSubmit({ name, number })) {
+    //   debugger;
+    //   reset();
+    // }
   };
 
   const reset = () => {
