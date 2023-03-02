@@ -4,7 +4,6 @@ import { persistor, store } from 'redux/store';
 import PhoneBook from './components/PhoneBook';
 
 export const App = () => {
-  console.log('Rendering App component');
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

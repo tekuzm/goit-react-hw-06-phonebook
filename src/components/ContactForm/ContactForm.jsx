@@ -12,12 +12,10 @@ const ContactForm = ({ onSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit({ name, number });
-    reset();
-    // if (onSubmit({ name, number })) {
-    //   debugger;
-    //   reset();
-    // }
+
+    if (onSubmit({ name, number })) {
+      reset();
+    }
   };
 
   const reset = () => {

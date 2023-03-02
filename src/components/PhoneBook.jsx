@@ -39,6 +39,7 @@ const PhoneBook = () => {
     }
 
     dispatch(addContact({ name, number }));
+    return true;
   };
 
   const handleDeleteContact = id => {
